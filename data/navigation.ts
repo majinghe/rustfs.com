@@ -1,5 +1,3 @@
-import { docs_url } from "@/lib/utils";
-
 export interface NavigationItem {
   title: string;
   href: string;
@@ -67,7 +65,7 @@ export const footerNavigation = [
   {
     title: "Product features",
     links: [
-      { title: "S3 Compatible", href: docs_url("developer/sdk") },
+      { title: "S3 Compatible", href: "/product/multiple-protocol-access#s3-api-compatibility" },
       { title: "Multiple Protocol Access", href: "/product/multiple-protocol-access" },
       { title: "Data Management", href: "/product/data-management" },
       { title: "High Availability & Scale", href: "/product/high-availability-scale" },
