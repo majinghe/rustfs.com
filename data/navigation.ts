@@ -47,6 +47,11 @@ export const resourceNavigation: NavigationItem[] = [
     description: "Optimal EC configurations for durability and storage efficiency.",
   },
   {
+    title: "Multi-tenant management",
+    href: "/product/operational-observability#multi-tenant-management",
+    description: "Operator-driven elastic scaling, MNMD provisioning, and tenant isolation.",
+  },
+  {
     title: "Documentation",
     href: "/docs",
     description: "Deploy, configure, and manage RustFS from quickstarts to API references.",
@@ -67,6 +72,7 @@ export const footerNavigation = [
       { title: "Data Management", href: "/product/data-management" },
       { title: "High Availability & Scale", href: "/product/high-availability-scale" },
       { title: "Operational & Observability", href: "/product/operational-observability" },
+      { title: "Multi-tenant management", href: "/product/operational-observability#multi-tenant-management" },
       { title: "Security & Compliance", href: "/product/security-compliance" },
     ],
   },

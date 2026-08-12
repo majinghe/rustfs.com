@@ -20,6 +20,25 @@ export const metadata: Metadata = {
 
 const sections: FeaturePageSection[] = [
   {
+    id: "multi-tenant-management",
+    title: "Multi-tenant management",
+    description: "RustFS Operator automates multi-tenant storage operations, from elastic capacity scaling to instant MNMD cluster provisioning with strict resource isolation.",
+    items: [
+      {
+        title: "Elastic storage auto-scaling",
+        description: "Scaling RustFS capacity and disk pools on demand with zero downtime, driven by automated Operator orchestration.",
+      },
+      {
+        title: "MNMD cluster provisioning",
+        description: "Provisioning multi-node, multi-disk RustFS clusters instantly with simultaneous multi-writer access for high-concurrency workloads.",
+      },
+      {
+        title: "Tenant-aware resource isolation",
+        description: "Enforcing strict capacity quotas, IOPS limits, and isolated access credentials across dynamically managed RustFS storage pools.",
+      },
+    ],
+  },
+  {
     title: "Console operations",
     items: [
       {

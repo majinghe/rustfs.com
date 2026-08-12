@@ -31,12 +31,24 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 export interface FeaturePageSection {
+  id?: string;
   title: string;
   description?: string;
   items?: {
     title: string;
     description: string;
   }[];
+}
+
+function sectionId(title: string, explicitId?: string) {
+  return (
+    explicitId ??
+    title
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "")
+  );
 }
 
 export interface FeaturePageLink {
@@ -350,7 +362,10 @@ function FeatureSection({
   const reverse = sectionIndex % 2 === 1;
 
   return (
-    <section className="border-t border-border py-16 sm:py-20">
+    <section
+      id={sectionId(section.title, section.id)}
+      className="scroll-mt-24 border-t border-border py-16 sm:py-20"
+    >
       <div>
         <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           {section.title}
