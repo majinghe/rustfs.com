@@ -1,5 +1,6 @@
 import FeaturePage, { type FeaturePageSection } from "@/components/business/feature-page";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "RustFS Cluster Operations & OTEL Observability | Enterprise Management",
@@ -22,7 +23,19 @@ const sections: FeaturePageSection[] = [
   {
     id: "multi-tenant-management",
     title: "Multi-tenant management",
-    description: "RustFS Operator automates multi-tenant storage operations, from elastic capacity scaling to instant MNMD cluster provisioning with strict resource isolation.",
+    description: (
+      <>
+        <Link
+          href="https://docs.rustfs.com/en/installation/cloud-native/operator"
+          target="_blank"
+          rel="noreferrer"
+          className="text-brand underline decoration-brand/40 underline-offset-4 transition-colors hover:decoration-brand"
+        >
+          RustFS Operator
+        </Link>{" "}
+        automates multi-tenant storage operations, from elastic capacity scaling to instant MNMD cluster provisioning with strict resource isolation.
+      </>
+    ),
     items: [
       {
         title: "Elastic storage auto-scaling",

@@ -33,10 +33,11 @@ import type { ReactNode } from "react";
 export interface FeaturePageSection {
   id?: string;
   title: string;
-  description?: string;
+  description?: ReactNode;
   items?: {
     title: string;
     description: string;
+    href?: string;
   }[];
 }
 
@@ -394,7 +395,16 @@ function FeatureSection({
               </span>
               <div>
                 <h3 className="text-lg font-semibold tracking-tight text-foreground">
-                  {item.title}
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="underline-offset-4 transition-colors hover:text-brand hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+                    >
+                      {item.title}
+                    </Link>
+                  ) : (
+                    item.title
+                  )}
                 </h3>
                 <p className="mt-2 text-sm leading-7 text-muted-foreground">
                   {item.description}
