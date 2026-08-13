@@ -500,7 +500,7 @@ export default function RustfsConfigGenerator() {
                     Please refer to our{" "}
                     <span className="whitespace-nowrap">
                       <Link
-                        href="/download#topology"
+                        href="/download/server/#topology"
                         className="font-semibold text-brand underline underline-offset-4 transition-colors hover:text-foreground"
                       >
                         installation topology selection
