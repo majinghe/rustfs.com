@@ -1,5 +1,5 @@
 ---
-title: "How to Install RustFS Using RPM and DEB Packages"
+title: "Step-by-Step Tutorial: How to Install RustFS with RPM/DEB Packages"
 slug: install-rustfs-with-rpm-and-deb-packages
 description: "Step-by-step guide to installing RustFS on Ubuntu 24.04 with RPM and DEB packages: XFS disk preparation, configuration, Console and rc CLI verification, and version upgrades."
 date: '2026-08-19T00:00:00.000Z'
@@ -12,7 +12,7 @@ tags:
 image: /images/blog/install-rustfs-with-rpm-and-deb-packages/cover.jpeg
 ---
 
-RustFS has shipped `rpm/deb` packages since `1.0.0-rc.1`, so you can install RustFS with a single `dpkg` command. This guide walks through installing a single-node, multi-disk RustFS instance on Ubuntu 24.04 using the RPM/DEB packages.
+RustFS has shipped `rpm/deb` packages since `1.0.0-rc.1`, so you can install RustFS with a single `dpkg` command. This guide walks through installing a [single-node, multi-disk](/download/server/#topology) RustFS instance on Ubuntu 24.04 using the RPM/DEB packages.
 
 ## Prepare the data disks
 
@@ -127,7 +127,7 @@ Confirm the cluster information on the status page:
 
 ### Verify with the rc CLI
 
-`rc` is the RustFS client CLI. You can use it to manage objects and buckets, storage pools, and cluster status.
+`rc` is the [RustFS client CLI](/download/cli/). You can use it to manage objects and buckets, storage pools, and cluster status.
 
 #### Install rc
 
